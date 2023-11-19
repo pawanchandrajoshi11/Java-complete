@@ -1,0 +1,11 @@
+POLYMORPHISM - same name but acts differently in different situations.
+
+Polymorphism -> two types:  
+
+1. Compile Time Polymorphism -> Polymorphism done in compile time. eg: Method Overloading
+    during compilation process, compiler knows which method to call on which condition.
+
+2. Run Time Polymorphism -> Polymorphism done in run time. eg: Method Overriding
+    during the compile time, compiler cannot tell which method is going to run as more than 
+    2 classes (inheritance) might have the same named* function present inside, hence only at the run-time 
+    it could find out which one ran.
