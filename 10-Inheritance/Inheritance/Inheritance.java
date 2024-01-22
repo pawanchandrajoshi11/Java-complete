@@ -3,7 +3,7 @@ import parentClasses.AdvCalc;
 import parentClasses.VeryAdvCalc;
 // import parentClasses.*;  // this will import all the FILES inside parentClasses package, not FOLDERS.
 
-public class Inheritance {
+public class Inheritance {   
     public static void main(String[] args) {
 
         VeryAdvCalc obj = new VeryAdvCalc();

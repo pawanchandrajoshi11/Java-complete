@@ -1,3 +1,7 @@
+
+# ARRAY OF OBJECTS
+
+```java
 class Student {
     int rollNum;
     String name;
@@ -33,3 +37,4 @@ public class ArrayObjects {
         } // output: Pawan : 89 Kiran : 89
     }
 }
+```

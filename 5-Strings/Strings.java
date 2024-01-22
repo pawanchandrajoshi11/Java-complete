@@ -10,8 +10,8 @@ public class Strings {
         // BY DEFAULT STRING IN JAVA IS IMMUTABLE - ONCE CREATED CANNOT BE MODIFIED
         // FURTHER
 
-        // IN ORDER TO MUTATE (MODIFY) STRING IN JAVA, we have two classes, STRING
-        // BUILDER AND STRING BUFFER
+        // IN ORDER TO MUTATE (MODIFY) STRING IN JAVA, we have two classes, 
+        // STRING BUILDER AND STRING BUFFER
         // STRING BUFFER is thread safe and STRING BUILDER is not.
 
         StringBuffer sb = new StringBuffer("Pawan Chandra");

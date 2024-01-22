@@ -5,7 +5,7 @@ class Human {
 
     // CONSTRUCTOR - special method of a class/structure in OOPS that initialises
     // the newly created object of that type
-    // automatically gets invoked when object of class gets created.
+    // automatically gets invoked when object of class is created.
 
     Human() { // DEFAULT CONSTRUCTOR
         age = 15;
@@ -22,7 +22,11 @@ class Human {
 
 public class Constructors {
     public static void main(String[] args) {
-        Human obj = new Human(); // invoke default constructor
-        Human obj1 = new Human(18, "Pawan"); // invoke parameterised constructor
+        Human obj = new Human(); // invoking default constructor
+        Human obj1 = new Human(18, "Pawan"); // invoking parameterised constructor
     }
 }
+
+
+
+

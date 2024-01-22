@@ -1,29 +1,43 @@
+# STATIC KEYWORD
+
+`STATIC BLOCK` - used to **initialise** the **static variables**
+
+- when a program executes, first class gets loaded and then objects are loaded, hence static method executes first, even before the constructor of the class
+
+---
+
+`CONSTRUCTOR OF CLASS` - used to initialise the objects of class when an object gets instantiated (or gets created)
+
+---
+
+`STATIC METHOD` - can **only access/use** the **variables** of class **who are STATIC**
+
+```java
 class Mobile {
     String brand;
     int price;
     static String category; // static variable of class mobile
 
-    // STATIC BLOCK - used to initialise the static variables, when a program
-    // executes, first class gets loaded and then objects are loaded, hence static
-    // method executes first, even before the constructor of the class
-    static { // this is a STATIC BLOCK
+
+    // STATIC BLOCK
+    static {
         category = "Digital Devices";
         System.out.println("Static method called!");
     }
 
-    // CONSTRUCTOR OF CLASS - used to initialise the objects of class when an object
-    // gets instantiated (or gets created)
+    // CONSTRUCTOR
     Mobile() {
         brand = "";
         price = 200;
         System.out.println("Constructor called!");
     }
 
-    public void show() { // normal method
+    // normal method
+    public void show() {
         System.out.println(brand + " : " + price + " : " + category);
     }
 
-    // STATIC METHOD - can only access/use the variables of class who are STATIC
+    // STATIC METHOD
     public static void show1() {
         System.out.println("category: " + category);
     }
@@ -35,12 +49,14 @@ class Mobile {
     }
 }
 
+```
+
 public class StaticKeyword {
-    public static void main(String[] args) {
-        // static keyword means you're making something as a Class' member not an
-        // Object's member, made common in the heap memory
-        // meaning it will be same/common for all the class objects and
-        // we can use static variables using their class name
+public static void main(String[] args) {
+// static keyword means you're making something as a Class' member not an
+// Object's member, made common in the heap memory
+// meaning it will be same/common for all the class objects and
+// we can use static variables using their class name
 
         Mobile obj1 = new Mobile();
         obj1.brand = "Apple";
@@ -63,6 +79,7 @@ public class StaticKeyword {
         // variables
         Mobile.show2(obj1); // Apple : 156 : CellularPhone
     }
+
 }
 
 // NOTE: "main" method in java class is always static so that JVM can invoke it
@@ -72,15 +89,15 @@ public class StaticKeyword {
 // start program, this will create a deadlock situation, hence creating MAIN
 // method static is a important.
 
-/*
- * Output of this file:
- * 
- * Static method called!
- * Constructor called!
- * Apple : 156 : SmartPhone
- * Constructor called!
- * Samsung : 190 : CellularPhone
- * category: CellularPhone
- * Apple : 156 : CellularPhone
- * 
- */
+/\*
+
+- Output of this file:
+-
+- Static method called!
+- Constructor called!
+- Apple : 156 : SmartPhone
+- Constructor called!
+- Samsung : 190 : CellularPhone
+- category: CellularPhone
+- Apple : 156 : CellularPhone
+- \*/
