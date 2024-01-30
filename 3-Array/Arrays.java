@@ -1,4 +1,8 @@
+import java.util.List;
+
 public class Arrays {
+    public static List<Integer> asList;
+
     public static void main(String[] args) {
         // int num[] = {5,6,7}
 
@@ -52,5 +56,15 @@ public class Arrays {
 
         // 3 - DIMENTIONAL ARRAYS
         int a[][][] = new int[3][4][5];
+    }
+
+    public static List<Integer> asList(int i, int j, int k, int l, int m, int n) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'asList'");
+    }
+
+    public static List<Integer> asList() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'asList'");
     }
 }
